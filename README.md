@@ -52,7 +52,8 @@ Dttrace.init({
     appType:<申请应用获得的app类型，必填>,
     token:<申请应用获得的token，必填>,
     sessionExpiration:'<Dttrace.js生成的session的过期时间，非必填>',
-    params:<自定义预置采集数据，会与Dttrace预置采集数据组合（Object），但不会覆盖Dttrace预置数据>
+    params:<自定义预置采集数据，会与Dttrace预置采集数据组合（Object），但不会覆盖Dttrace预置数据，非必填>,
+    debug:<是否开启实时调试，非必填>
 });
 ```
 
@@ -148,6 +149,7 @@ class App extends PureComponent{
 **token** |String|必选。申请应用获得的token
 **sessionExpiration** | Number|非必选。Dttrace.js生成的session的过期时间,精确到毫秒。默认30分钟
 **params** | Oject |非必选。全局的额外采集数据，会与默认采集数据组合
+**debug** | Boolean |非必选。开启实时调试的钥匙，true为开启，false为关闭，默认false
 
 **示例：**
 
